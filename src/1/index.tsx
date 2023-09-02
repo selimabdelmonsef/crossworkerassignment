@@ -19,7 +19,7 @@ export const Task1 = () => {
   };
 
   return (
-    <div id="Task-1" className="page-container">
+    <div className="page-container">
       <div className="logo-container">
         <img
           style={{ height: "7rem" }}
