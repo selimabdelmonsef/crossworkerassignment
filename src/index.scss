@@ -30,12 +30,24 @@ p {
   font-size: 18px;
 }
 
-.task-container {
+.task-1-container {
   border-radius: 8px;
   border: 3px dashed #ddd;
   padding: 16px;
   display: flex;
   justify-content: center;
+  background: whitesmoke;
+}
+.task-2-container {
+  border-radius: 8px;
+  border: 3px dashed #ddd;
+  padding: 16px;
+  background: whitesmoke;
+}
+.task-3-container {
+  border-radius: 8px;
+  border: 3px dashed #ddd;
+  padding: 16px;
   background: whitesmoke;
 }
 
