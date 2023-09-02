@@ -50,8 +50,14 @@ interface TaskContainerProps {
   children: React.ReactNode;
 }
 
-const TaskContainer: FunctionComponent<TaskContainerProps> = (props) => {
-  return <div className="task-container">{props.children}</div>;
+const Task1Container: FunctionComponent<TaskContainerProps> = (props) => {
+  return <div className="task-1-container">{props.children}</div>;
+};
+const Task2Container: FunctionComponent<TaskContainerProps> = (props) => {
+  return <div className="task-2-container">{props.children}</div>;
+};
+const Task3Container: FunctionComponent<TaskContainerProps> = (props) => {
+  return <div className="task-3-container">{props.children}</div>;
 };
 
 const Task: FunctionComponent = () => {
@@ -69,9 +75,9 @@ const Task: FunctionComponent = () => {
             make the form as aesthetically pleasing as possible.
           </p>
 
-          <TaskContainer>
+          <Task1Container>
             <Task1 />
-          </TaskContainer>
+          </Task1Container>
         </>
       );
     case "2":
@@ -90,9 +96,9 @@ const Task: FunctionComponent = () => {
             props and managing state.
           </p>
 
-          <TaskContainer>
+          <Task2Container>
             <Task2 />
-          </TaskContainer>
+          </Task2Container>
         </>
       );
     case "3":
@@ -120,9 +126,9 @@ const Task: FunctionComponent = () => {
             TypeScript knowledge.
           </p>
 
-          <TaskContainer>
+          <Task3Container>
             <Task3 />
-          </TaskContainer>
+          </Task3Container>
         </>
       );
     default:
