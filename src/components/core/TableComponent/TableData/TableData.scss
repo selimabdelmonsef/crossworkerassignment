@@ -1,0 +1,30 @@
+@import "../../../../styles/styles.scss";
+
+.table-body {
+    .table-rows {
+        color: $grey;
+        transition: 0.1s all linear;
+        overflow: hidden;
+        @media screen and (max-width: 1200px) {
+            max-height: 2.875rem;
+        }
+        .table-data {
+            font-size: 0.875rem;
+            font-weight: 400;
+            line-height: 1rem;
+            color: inherit;
+            text-align: center;
+            background-color: $light_grey3;
+            border-bottom: 1px solid $light_grey3;
+            padding: 1rem 0.5rem;
+            &:hover {
+                color: inherit;
+            }
+            @media screen and (max-width: 1200px) {
+                line-height: 0.875rem;
+                font-size: 0.75rem;
+                min-width: fit-content;
+            }
+        }
+    }
+}

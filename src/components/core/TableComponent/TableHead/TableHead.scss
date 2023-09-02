@@ -1,0 +1,14 @@
+@import "../../../../styles/styles.scss";
+
+.table-headers {
+    .headers {
+        background-color: #003951;
+        color: white;
+        font-weight: 600;
+        font-size: 0.75rem;
+        line-height: 30px;
+        text-transform: uppercase !important;
+        text-align: center;
+        padding: 1rem 0.5rem;
+    }
+}
