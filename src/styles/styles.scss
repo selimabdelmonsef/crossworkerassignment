@@ -1,0 +1,66 @@
+// colors
+// blue
+$light_blue: #4385f9;
+$blue: #0e50e2;
+$dark_blue: #0037d1;
+// red
+$red: #ef6337;
+$dark_red: #d32f2f;
+$light_red: #f9d6d0;
+$salmon_red: #fa8072;
+$red_danger: #c24038;
+//grey
+$dark_grey: #1e1e1e;
+$dark_grey2: #5e5e5e;
+$grey: #545454;
+$light_grey: #2c2c2c;
+$light_grey2: #aeaeae;
+$light_grey3: #efefef;
+$light_grey4: rgb(249, 249, 249);
+$light_grey5: rgb(239, 239, 239);
+$light_grey6: #dcdcdc;
+$light_grey7: #757575;
+// white
+$white: #ffffff;
+$off_white: #f8f8f8;
+$darker_off_white: #e6e5e3;
+// black
+$black: #000000;
+$black2: #1c1c1c;
+// yellow
+$yellow: #ffefbe;
+// green
+$light_green: #d7f2eb;
+$light_green2: #65bea7;
+// pink
+$light_pink: #d18383;
+
+.mandatory-asterisk {
+    color: red;
+}
+
+.disabled {
+    opacity: 30%;
+    cursor: none;
+    pointer-events: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.user-select-none {
+    user-select: none;
+}
+
+.pointer-events-none {
+    pointer-events: none;
+}
+
+.direction-rtl {
+    direction: rtl;
+}
+
+.direction-ltr {
+    direction: ltr;
+}
