@@ -2,6 +2,7 @@ import * as React from "react";
 
 // Style
 import "./index.scss";
+import { TodoPage } from "../pages/TodoPage/TodoPage";
 
 // Components
 /*
@@ -10,7 +11,11 @@ import "./index.scss";
  */
 
 const Task3: React.FunctionComponent = () => {
-  return <div id="task-3">#Code goes here#</div>;
+  return (
+    <div id="task-3">
+      <TodoPage />
+    </div>
+  );
 };
 
 export default Task3;
