@@ -21,6 +21,7 @@ export function StringInput(props: StringInputProps): ReactElement {
       ) : null}
       <input
         className="string-input"
+        aria-label={props.label || props.placeholder}
         type={
           props.type === INPUT_TYPE.password
             ? onHideText

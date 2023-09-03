@@ -3,20 +3,11 @@ import { FunctionComponent, useState } from "react";
 import { StringInput } from "../components/core/StringInput/StringInput";
 import { INPUT_TYPE } from "../components/core/StringInput/StringInput.types";
 import { CW_IMAGES } from "../constants/images";
+import { isValidEmail } from "../helpers/isValidEmail";
 
 export const Task1 = () => {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
-
-  const isValidEmail = (email: string): boolean => {
-    return Boolean(
-      String(email)
-        .toLowerCase()
-        .match(
-          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-        )
-    );
-  };
 
   return (
     <div className="page-container">
@@ -30,6 +21,7 @@ export const Task1 = () => {
 
       <>
         <StringInput
+          className="email-input"
           label="Email"
           currentValue={email}
           onChange={(e) => {
@@ -48,7 +40,6 @@ export const Task1 = () => {
           onChange={(e) => {
             setPassword(e);
           }}
-          isValid={isValidEmail(password)}
           isMandatory={true}
           onBlur={(e) => console.log(e)}
           placeholder={"Type password here"}
